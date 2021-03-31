@@ -1,10 +1,15 @@
 <?php 
-    require_once("Mahasiswa.php");
     
-    class MahasiswaBaru extends Mahasiswa{
+    namespace application\backend;
+    
+    require_once("Mahasiswa.php");
+
+    class MahasiswaBaru extends Mahasiswa
+    {
         protected $no_registrasi;
 
-            function __construct($nim, $nama, $tgl, $jk, $regis){
+            function __construct($nim, $nama, $tgl, $jk, $regis)
+            {
                 $this->nim = $nim;
                 $this->nama = $nama;
                 $this->tanggal_lahir = $tgl;
@@ -12,17 +17,20 @@
                 $this->no_registrasi = $regis;
             }
 
-            public function bayarGedung(){
-            echo "$this->nama telah membayar gedung";
+            public function bayarGedung()
+            {
+                echo "$this->nama telah membayar gedung";
             }
 
                 // setter
-                public function setNoRegristrasi($no_regristrasi){
+                public function setNoRegristrasi($no_regristrasi)
+                {
                     $this->no_registrasi = $no_regristrasi;
                 }
 
                     // getter
-                    public function getNoRegristrasi(){
+                    public function getNoRegristrasi()
+                    {
                         return $this->no_registrasi;
                     }
     }

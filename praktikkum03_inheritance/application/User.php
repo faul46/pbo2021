@@ -1,30 +1,39 @@
 <?php
+
+    namespace application\backend;
+    
     class User
     {
         protected $username;
         protected $password;
 
-            function __construct($user, $pass){
+            function __construct($user, $pass)
+            {
                 $this->username = $user;
                 $this->password = $pass;
             }
 
-                public function login(){
+                public function login()
+                {
                     return "$this->username telah berhasil login";
                 }
                     // setter
-                    public function setUsername($username){
+                    public function setUsername($username)
+                    {
                         $this->username = $username;
                     }
-                        public function setPassword($password){
+                        public function setPassword($password)
+                        {
                             $this->password = $password;
                         }
 
                             // getter
-                            public function getUsername(){
+                            public function getUsername()
+                            {
                                 return $this->username;
                             }
-                                public function getPassword(){
+                                public function getPassword()
+                                {
                                     return $this->password;
                                 }
     } 

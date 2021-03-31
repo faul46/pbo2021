@@ -1,6 +1,9 @@
 <?php
 
-require_once 'StringMutator.php';
+require_once 'initialize.php';
+
+use application\backend\StringMutator;
+
 
 $kata = new StringMutator('Dian Prawira');
 

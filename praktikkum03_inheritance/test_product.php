@@ -1,6 +1,9 @@
 <?php
 
-require_once 'Product.php';
+require_once 'initialize.php';
+
+use application\backend\Product;
+
 
 $pro = new Product();
 echo $pro->getProductType();

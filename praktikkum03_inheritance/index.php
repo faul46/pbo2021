@@ -1,6 +1,6 @@
 <?php
-    require_once("Mahasiswa.php");
-    require_once('MahasiswaBaru.php');
+
+    require_once("initialize.php");
 
     $faul = new Mahasiswa("H1101191046", "Faul Oliber Mario Siagian", "2001-06-27", "Pria");
     $putri = new MahasiswaBaru("H1101201099", "Putri Cinderela", "2004-05-26", "Perempuan", 9118334);
