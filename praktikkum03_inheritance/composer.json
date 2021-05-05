@@ -1,0 +1,16 @@
+{
+    "name": "enfp/praktikkum03_inheritance",
+    "description": "praktikkum pbo",
+    "authors": [
+        {
+            "name": "faul46",
+            "email": "faul@student.untan.ac.id"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4":{
+    		"App\\":"application"
+    	}
+    }
+}

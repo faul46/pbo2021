@@ -1,6 +1,5 @@
 <?php
-
-    namespace application\backend;
+namespace App;
 
     require_once("Pegawai.php");
 
@@ -26,6 +25,11 @@
                     public function meneliti()
                     {
                         echo $this->nama." sedang meneliti<br>";
+                    }
+
+                    public function getNama()
+                    {
+                        return $tis->nama;
                     }
 
                         // setter

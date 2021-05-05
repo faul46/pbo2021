@@ -1,7 +1,6 @@
 <?php
-    
-    namespace application\backend;
-    
+namespace App;
+
     require_once("User.php");
 
     class Mahasiswa extends User
@@ -10,6 +9,12 @@
         protected $nama;
         protected $tanggal_lahir;
         protected $jenis_kelamin;
+        const AKTIF = 1;
+        const NON_AKTIF = 0;
+        public static $sks = 5;
+        public static $bobot = 6;
+
+        public static $status = self::AKTIF;
 
             function __construct($nim, $nama, $tgl, $jk)
             {
@@ -70,6 +75,27 @@
                                                         {
                                                             return $this->jenis_kelamin;
                                                         }
+
+
+
+
+                                                        public static function bergerak()
+                                                        {
+                                                            echo "agen solusi, bukan agen perubahan <br/>";
+                                                        }
+
+                                                        final public  function tuntaskan()
+                                                        {
+                                                            self::bergerak();
+                                                            echo "memperbaiki menjadi lebih baik";
+                                                        }
+
+                                                        public static function hitungSks()
+                                                        {
+                                                            echo "Hasil sks adalah " . self::$sks * self::$bobot;
+                                                        }
+
+
     }
     
 

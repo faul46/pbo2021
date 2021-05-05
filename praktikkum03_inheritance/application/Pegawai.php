@@ -1,7 +1,6 @@
 <?php
-    
-    namespace application\backend;
-    
+namespace App;
+
     require_once("User.php");
 
     class Pegawai extends User

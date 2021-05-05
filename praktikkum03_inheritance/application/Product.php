@@ -1,7 +1,6 @@
 <?php
+namespace App;
 
-	namespace application\backend;
-	
 	class Product  
 	{
 	    protected $_type = 'Book';
